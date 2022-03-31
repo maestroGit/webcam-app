@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webcam</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+
+    <!-- Cabecera -->
+    <h1>Capturar Webcam con HTML5 y Javascript</h1>
+   
+    <!-- Mensaje de error -->
+    <span name="errorMsg"></span>
+    
+    <!-- Cargar Frame de TV y cargar el video de la webcam -->
+    <div id="video_wrap">
+        <div id="video_overlays">
+            <img src="img/tv.png"></img>
+        </div> 
+        <video id="video_frame" playsinline autoplay></video>
+    </div>
+    
+    <!-- Capturamos la imagen a través de la API web y lo mostramos en el canvas -->
+    <div class="button_controller">
+        <!-- Botón para capturar -->
+        <button id="snap_frame">Capturar Imagen</button>
+        <br/><br/>
+        <!-- Imagen de la Webcam -->
+        <canvas id="canvas_frame"></canvas>
+    </div>
+    
+    <!-- Cargamos el Javascript -->
+    <script src="app.js" async></script>
+    </body>
+    </html>
