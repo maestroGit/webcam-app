@@ -19,6 +19,7 @@ body {
 }
 #video_frame {
     width: 720px;
+    height: 450px;
 }
 #canvas_frame {
     width: 320px;
